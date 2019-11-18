@@ -1,0 +1,116 @@
+Useful commands:
+
+find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch
+	**// deletes DS store files below parent directory
+
+echo .DS_Store >> .gitignore
+	**// put .DS_Store into gitignore file
+
+git add .gitignore
+	**// add gitignore file to git
+
+git commit -m '.DS_Store banished!'
+	**// commit all files with 'string'
+
+ifconfig
+	**// then look for en0: inet and that's your localhost address
+
+otool -tv a.out
+	**// print machine code to terminal
+
+nmap -p 22 192.168.1.25
+	**// check specific port status
+
+nmap 192.168.1.25
+	**// find all open ports
+
+ssh pi@192.168.1.25 or ssh pi@92.8.161.248
+	**// ssh to pit local or remote
+	**// use sftp to transfer files
+
+ping 192.168.1.25
+	**// check ip response
+
+pwd|pbcopy
+	**// copy present working directory to clipboard
+	**// pwd prints PWD lpwd prints local PWD
+
+g++ test.cpp -o test.out
+	**// compile to specific name (gcc for c)
+
+sudo service ssh restart
+	**// restart the ssh service
+
+service cron status
+	**// check scheduled task status
+
+sudo service cron start (or stop)
+	**// start or stop task scheduler
+
+crontab -e or -l
+	**// edit or list jobs scheduled with cron
+
+ls -a -l
+	**// files with:
+		-a: all including temp files or . files
+		-l: more info: permissions|links|owner|privelages|size|last mod|name
+		-al: combine both
+
+get remoteFile [localFile]
+	**// sftp secure transfer remoteFile to (optional) localFile name
+	**// use get -r someDirectory to copy all contents
+	**// use -p to maintain permissions and access times
+
+put localFile
+	**// sftp secure upload localFile
+
+df -h
+	**// get memory size and availability
+
+! then exit
+	**// go back to local shell, exit returns to remote ssh or sftp
+
+l flag - local, so when ssh or sftp attach this eg lcd or lls to access local PWD
+
+cd var/www/html/ 
+	**// for my test website
+
+cd ~/Entrepreneurship/Entrepreneurship-CW/Product/projects/
+	**// entrepreneurship website
+
+vim ~/.vimrc
+	**// set vim preferences
+
+vim -
+	**// return to previous PWD
+
+sudo npm install -g nodemon
+	**// demon for keeping server live
+
+eval `ssh-agent -s`
+
+
+telnet 92.8.161.248 3000
+	**// test connection
+
+conda activate venv:
+	**// virtual environment
+
+echo .DS_Store >> .gitignore
+	**// add the line .DS_Store to the file .gitignore
+
+top
+	**// list running processes
+
+netstat -ltnp | grep -w ':8080'
+	**// check process running on port
+
+kill 32246
+	**// kill process by PID
+
+cmd + brightness up
+	**// detect displays
+
+sudo !!
+	**// do last command as admin
+	
